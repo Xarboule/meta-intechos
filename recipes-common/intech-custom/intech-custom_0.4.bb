@@ -1,4 +1,4 @@
-DESCRIPTION = "Custom messages for INTech CosmOS"
+DESCRIPTION = "Custom messages for INTechOS"
 AUTHOR = "Discord"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
@@ -22,6 +22,8 @@ SRC_URI=" \
 
 FILES_${PN} += "/etc/motd"
 
+
+
 USER="root"
 
 do_install() {
@@ -39,3 +41,4 @@ do_install() {
 	install -m 0522 ${S}/motd ${D}/etc/motd
         install -m 0522 ${S}/interfaces ${D}/etc/network/interfaces
 }
+
